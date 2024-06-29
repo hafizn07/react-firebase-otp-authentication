@@ -16,10 +16,8 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+a {
+  color: #ff8682;
+  font-weight: 600;
+  font-size: 14px;
 }

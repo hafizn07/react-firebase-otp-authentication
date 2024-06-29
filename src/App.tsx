@@ -1,10 +1,13 @@
 import "@/App.css";
+import RegisterForm from "@components/forms/register-form";
+// import LoginForm from "@components/forms/login-form";
 
 function App() {
   return (
-    <>
-      <p>React + Firebase OTP based Authentication and User Registeration.</p>
-    </>
+    <div>
+      <RegisterForm />
+      {/* <LoginForm /> */}
+    </div>
   );
 }
 
