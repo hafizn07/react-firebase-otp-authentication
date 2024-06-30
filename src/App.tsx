@@ -1,14 +1,12 @@
+import { useAuthState } from "react-firebase-hooks/auth";
+import HomePage from "@components/home-page";
+import LoginPage from "@pages/login-page";
+import { auth } from "@/firebase/setup";
 import "@/App.css";
-import RegisterForm from "@components/forms/register-form";
-// import LoginForm from "@components/forms/login-form";
 
 function App() {
-  return (
-    <div>
-      <RegisterForm />
-      {/* <LoginForm /> */}
-    </div>
-  );
+  const [user] = useAuthState(auth);
+  return user ? <HomePage /> : <LoginPage />;
 }
 
 export default App;
